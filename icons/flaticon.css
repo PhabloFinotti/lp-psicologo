@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?8a740604c9740b5042febc8c67df5546") format("truetype"),
+url("./flaticon.woff?8a740604c9740b5042febc8c67df5546") format("woff"),
+url("./flaticon.woff2?8a740604c9740b5042febc8c67df5546") format("woff2"),
+url("./flaticon.eot?8a740604c9740b5042febc8c67df5546#iefix") format("embedded-opentype"),
+url("./flaticon.svg?8a740604c9740b5042febc8c67df5546#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-escudo-seguro:before {
+    content: "\f101";
+}
+.flaticon-medalha:before {
+    content: "\f102";
+}
+.flaticon-trophy:before {
+    content: "\f103";
+}
+.flaticon-star:before {
+    content: "\f104";
+}
+.flaticon-maconha:before {
+    content: "\f105";
+}
+.flaticon-revolver:before {
+    content: "\f106";
+}
+.flaticon-algemas:before {
+    content: "\f107";
+}
+.flaticon-escudo:before {
+    content: "\f108";
+}
+.flaticon-cifrao:before {
+    content: "\f109";
+}
+.flaticon-bate-papo:before {
+    content: "\f10a";
+}
+.flaticon-botao-de-menu-de-tres-linhas-horizontais:before {
+    content: "\f10b";
+}
+.flaticon-whatsapp:before {
+    content: "\f10c";
+}
+.flaticon-relogio:before {
+    content: "\f10d";
+}
+.flaticon-aspa:before {
+    content: "\f10e";
+}

@@ -1,0 +1,81 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?8a740604c9740b5042febc8c67df5546") format("truetype"),
+url("./flaticon.woff?8a740604c9740b5042febc8c67df5546") format("woff"),
+url("./flaticon.woff2?8a740604c9740b5042febc8c67df5546") format("woff2"),
+url("./flaticon.eot?8a740604c9740b5042febc8c67df5546#iefix") format("embedded-opentype"),
+url("./flaticon.svg?8a740604c9740b5042febc8c67df5546#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "escudo-seguro": "\f101",
+    "medalha": "\f102",
+    "trophy": "\f103",
+    "star": "\f104",
+    "maconha": "\f105",
+    "revolver": "\f106",
+    "algemas": "\f107",
+    "escudo": "\f108",
+    "cifrao": "\f109",
+    "bate-papo": "\f10a",
+    "botao-de-menu-de-tres-linhas-horizontais": "\f10b",
+    "whatsapp": "\f10c",
+    "relogio": "\f10d",
+    "aspa": "\f10e",
+);
+
+.flaticon-escudo-seguro:before {
+    content: map-get($flaticon-map, "escudo-seguro");
+}
+.flaticon-medalha:before {
+    content: map-get($flaticon-map, "medalha");
+}
+.flaticon-trophy:before {
+    content: map-get($flaticon-map, "trophy");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-maconha:before {
+    content: map-get($flaticon-map, "maconha");
+}
+.flaticon-revolver:before {
+    content: map-get($flaticon-map, "revolver");
+}
+.flaticon-algemas:before {
+    content: map-get($flaticon-map, "algemas");
+}
+.flaticon-escudo:before {
+    content: map-get($flaticon-map, "escudo");
+}
+.flaticon-cifrao:before {
+    content: map-get($flaticon-map, "cifrao");
+}
+.flaticon-bate-papo:before {
+    content: map-get($flaticon-map, "bate-papo");
+}
+.flaticon-botao-de-menu-de-tres-linhas-horizontais:before {
+    content: map-get($flaticon-map, "botao-de-menu-de-tres-linhas-horizontais");
+}
+.flaticon-whatsapp:before {
+    content: map-get($flaticon-map, "whatsapp");
+}
+.flaticon-relogio:before {
+    content: map-get($flaticon-map, "relogio");
+}
+.flaticon-aspa:before {
+    content: map-get($flaticon-map, "aspa");
+}

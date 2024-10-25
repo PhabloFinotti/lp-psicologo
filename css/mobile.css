@@ -1,0 +1,101 @@
+@media screen and (max-width: 1190px){
+
+    html{
+        font-size: 93.75%;
+    }
+}
+@media screen and (max-width: 990px){
+    html{
+        font-size: 85.75%;
+    }
+
+    .banner > figure{
+        display: none;
+    }
+    
+    .banner > figure.banner__responsivo{
+        display: block;
+    }
+}
+@media screen and (max-width: 770px){
+    .title-primary{
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    .info-banner h1{
+        font-size: 2.5em;
+    }
+    .sobre-bg .title-primary{
+        margin-bottom: 1em;
+    }
+    .title-border:after{
+        margin-bottom: 1em;
+    }
+    .header-contatos{
+        display: none;
+    }
+    .navbar-brand{
+        width: 100%;
+        text-align: center;
+    }
+    .banner .info-banner{
+        width: 100%;
+    }
+    .banner .title-primary,
+    .sobre .title-primary,
+    .contato-msg .title-primary{
+        text-align: left;
+    }
+    .sobre .row .col-6{
+        width: 100%;
+        display: block;
+    }
+    
+    .sobre-bg{
+        margin-top: 2em;
+        padding: 1em 1em;
+    }
+    
+    #especialidade{
+        background-size: 0%;
+        background-color: #333a4d;
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+        margin-top: 0em;
+        padding: 5em 0 5em 0;
+    }
+    
+    .biografia .title-border:after{
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    .biografia-box{
+        width: 100%;
+        position: relative;
+        top: 0em;
+    }
+    .biografia figure{
+        background-color: aqua;
+        width: 100%;
+        text-align: center;
+    }
+    .biografia figure img{
+        width: 100%;
+    }
+    .blog{
+        padding: 5em 0 5em;
+        background-size: 0%;
+        background-color: #f7f8f9;
+    }
+    .blog .row{
+        row-gap: 30px;
+    }
+    .contato-msg .col-7{
+        width: 100%;
+    }
+    .contato-bg{
+        width: 100%;
+        margin-top: 2em;
+        padding: 2em 1em;
+    }
+}
