@@ -1,101 +1,119 @@
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 990px) {
+  .banner > figure {
+    display: none;
+  }
 
-    html{
-        font-size: 93.75%;
-    }
-}
-@media screen and (max-width: 990px){
-    html{
-        font-size: 85.75%;
-    }
+  .banner > figure.banner__responsivo {
+    display: block;
+  }
 
-    .banner > figure{
-        display: none;
-    }
-    
-    .banner > figure.banner__responsivo{
-        display: block;
-    }
+  .banner .info-banner {
+    width: 100%;
+  }
+
+  .sobre-bg {
+    margin-top: 2em;
+    padding: 1em 1em;
+  }
+
+  .sobre-bg .title-primary {
+    margin-bottom: 1rem;
+  }
+
+  .header-contatos {
+    display: none;
+  }
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+  .sobre {
+    padding: 3rem 0;
+  }
+
+  .sobre .header-sobre .title-primary {
+    margin-bottom: 2rem;
+  }
+
+  .title-border:after {
+    margin-bottom: 1rem;
+  }
+
+  .banner .title-primary,
+  .sobre .title-primary,
+  .contato-msg .title-primary {
+    text-align: left;
+  }
+
+  #especialidade {
+    background-size: 0%;
+    background-color: #333a4d;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    margin-top: 0em;
+    padding: 5em 0 5em 0;
+  }
+
+  /* .biografia {
+    padding: 3rem 0;
+  }
+  .biografia .title-border:after {
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+
+  .biografia figure {
+    width: 100%;
+    text-align: center;
+  }
+  .biografia figure img {
+    width: 100%;
+  } */
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev,
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    display: none;
+    top: var(--swiper-pagination-top, auto);
+    right: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+
+  .beneficios {
+    padding: 3rem 0;
+  }
+
+  #beneficios .curriculo .card-body {
+    padding: 1rem 0 2rem;
+  }
+
+  #beneficios .curriculo .card-body figure {
+    margin-top: -3rem;
+  }
+
+  #beneficios .curriculo .curriculo__inner--card.curriculo__valores h3 {
+    font-size: 2rem;
+  }
+
+  .beneficios .curriculo__valores--inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .beneficios .beneficios__list {
+    margin-top: 2rem;
+  }
 }
-@media screen and (max-width: 770px){
-    .title-primary{
-        text-align: center;
-        font-size: 2.5em;
-    }
-    
-    .info-banner h1{
-        font-size: 2.5em;
-    }
-    .sobre-bg .title-primary{
-        margin-bottom: 1em;
-    }
-    .title-border:after{
-        margin-bottom: 1em;
-    }
-    .header-contatos{
-        display: none;
-    }
-    .navbar-brand{
-        width: 100%;
-        text-align: center;
-    }
-    .banner .info-banner{
-        width: 100%;
-    }
-    .banner .title-primary,
-    .sobre .title-primary,
-    .contato-msg .title-primary{
-        text-align: left;
-    }
-    .sobre .row .col-6{
-        width: 100%;
-        display: block;
-    }
-    
-    .sobre-bg{
-        margin-top: 2em;
-        padding: 1em 1em;
-    }
-    
-    #especialidade{
-        background-size: 0%;
-        background-color: #333a4d;
-        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
-        margin-top: 0em;
-        padding: 5em 0 5em 0;
-    }
-    
-    .biografia .title-border:after{
-        margin: 0 auto;
-        margin-bottom: 1em;
-    }
-    .biografia-box{
-        width: 100%;
-        position: relative;
-        top: 0em;
-    }
-    .biografia figure{
-        background-color: aqua;
-        width: 100%;
-        text-align: center;
-    }
-    .biografia figure img{
-        width: 100%;
-    }
-    .blog{
-        padding: 5em 0 5em;
-        background-size: 0%;
-        background-color: #f7f8f9;
-    }
-    .blog .row{
-        row-gap: 30px;
-    }
-    .contato-msg .col-7{
-        width: 100%;
-    }
-    .contato-bg{
-        width: 100%;
-        margin-top: 2em;
-        padding: 2em 1em;
-    }
+@media screen and (max-width: 640px) {
+  .title-primary {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .info-banner h1 {
+    font-size: 2.25rem;
+  }
+ 
 }

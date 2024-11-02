@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6{
   height: 3px;
   margin-bottom: 1em;
   position: relative;
-  top: .5em;
+  top: .5rem;
 }
 
 .title-border-center:after {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-.btn-reset:hover {
+.btn-reset.btn-white:hover {
   background-color: #dfdfdf;
 }
 /******* BTNS *******/
@@ -246,17 +246,18 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header-bottom .navbar img {
-  max-width: 15px;
+  max-width: 25px;
   margin-top: -.2em;
   padding-left: .2em;
+  height: 40px;
 }
 
 .navbar-toggler {
   width: 100%;
-  font-size: 1em;
-  padding: 1em 0;
+  font-size: 1rem;
+  padding: .725rem 0;
   border: none;
-  color: var(--color-black);
+  color: var(--white);
 }
 
 #menuMobile {
@@ -500,15 +501,13 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
 }
 
+
 .biografia-box {
-  width: 50%;
   padding: 2em;
   background-color: var(--white);
-  position: absolute;
-  top: 4em;
-  right: 0;
   border-radius: var(--border-radius);
 }
+
 
 .biografia figure {
   max-height: 700px;
@@ -611,17 +610,17 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /******* Contato *******/
-#beneficios{
-  padding: 20px 0 90px;
+.beneficios{
+  padding: 1rem 0 5rem;
 }
 
-#beneficios .header-beneficios{
+.beneficios .header-beneficios{
   text-align: center;
   margin-bottom: 6rem;
 }  
 
 /* CURRICULO */
-#beneficios .curriculo .card-body{
+.beneficios .curriculo .card-body{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -631,7 +630,7 @@ h1, h2, h3, h4, h5, h6{
   gap: 1.5rem;
 }
 
-#beneficios .curriculo .card-body figure{
+.beneficios .curriculo .card-body figure{
   height: 190px;
   width: 190px;
   display: flex;
@@ -646,13 +645,13 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom: 0;
 }
 
-#beneficios .curriculo .card-body figure img{
+.beneficios .curriculo .card-body figure img{
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
  
-#beneficios .curriculo .curriculo__inner--card{
+.beneficios .curriculo .curriculo__inner--card{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -661,39 +660,38 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
-#beneficios .curriculo .curriculo__inner--card h3{
+.beneficios .curriculo .curriculo__inner--card h3{
   font-size: 1.9rem;
   margin-bottom: 1rem;
 }
 
-#beneficios .curriculo .curriculo__inner--card > span{
+.beneficios .curriculo .curriculo__inner--card > span{
   font-size: 1.25rem;
   opacity: .8;
 }
 
-#beneficios .curriculo .curriculo__inner--card ul{
+.beneficios .curriculo .curriculo__inner--card ul{
   padding: 0;
   list-style: none;
+  margin-bottom: 0;
 }
 
-#beneficios .curriculo .curriculo__inner--card li{
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+.beneficios .curriculo .curriculo__inner--card li{
   margin-bottom: 6px;
 }
 
-#beneficios .curriculo .curriculo__inner--card li img{
+.beneficios .curriculo .curriculo__inner--card li img{
   height: 20px;
   width: 20px;
   object-fit: contain;
+  margin-right: 6px;
 }
 
-#beneficios .curriculo .curriculo__inner--card.curriculo__valores h3{
+.beneficios .curriculo .curriculo__inner--card.curriculo__valores h3{
   position: relative;
   font-size: 2.5rem;
 }
-#beneficios .curriculo .curriculo__inner--card.curriculo__valores h3::after{
+.beneficios .curriculo .curriculo__inner--card.curriculo__valores h3::after{
     content: "";
     display: block;
     width: 100px;
@@ -704,11 +702,11 @@ h1, h2, h3, h4, h5, h6{
     bottom: -8px;
 }
 
-#beneficios .curriculo .curriculo__inner--card.curriculo__valores span{
+.beneficios .curriculo .curriculo__inner--card.curriculo__valores span{
   font-size: 1.75rem;
 }
 
-#beneficios .curriculo .curriculo__valores--inner{
+.beneficios .curriculo .curriculo__valores--inner{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -716,38 +714,38 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 2rem;
 }
 
-#beneficios .curriculo .curriculo__valores--inner > div > *{
+.beneficios .curriculo .curriculo__valores--inner > div > *{
   text-align: center;
 }
 
-#beneficios .curriculo .curriculo__valores--inner p{
+.beneficios .curriculo .curriculo__valores--inner p{
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 0;
 }
 
-#beneficios .curriculo .curriculo__valores--inner span{
+.beneficios .curriculo .curriculo__valores--inner span{
   font-weight: bold;
   font-size: 2.25rem;
 }
 /* CURRICULO */
 
-#beneficios .beneficios__list{
+.beneficios .beneficios__list{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
 
-#beneficios .beneficio__card + .beneficio__card{
+.beneficios .beneficio__card + .beneficio__card{
   margin-top: 1.5rem;
 }
-#beneficios .beneficio__card{
+.beneficios .beneficio__card{
   display: flex;
   gap: 1.5rem;
 }
 
-#beneficios .beneficio__card figure{
+.beneficios .beneficio__card figure{
   height: 70px;
   width: 70px;
   display: flex;
@@ -763,7 +761,7 @@ h1, h2, h3, h4, h5, h6{
   flex-shrink: 0;
 }
 
-#beneficios .beneficio__card figure img{
+.beneficios .beneficio__card figure img{
   height: 100%;
   width: 100%;
   object-fit: contain;
