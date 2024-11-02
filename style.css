@@ -11,7 +11,7 @@
   --color-secondary: #567950;
   --color-secondary-soft: #b0c9ac;
   --color-dark: #d2d6cf;
-  --color-withe-dark: #f7f8f9;
+  --color-offwhite: #f7f8f9;
   --color-black: #333;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
   --border-radius: 10px;
@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: var(--color-withe-dark);
+  background-color: var(--color-offwhite);
 }
 
 img {
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6{
   font-size: 1.1rem;
   font-weight: 400;
   background-color: var(--color-secondary);
-  color: var(--color-withe-dark);
+  color: var(--color-offwhite);
   padding: .8em 1.5em;
   border-radius: var(--border-radius);
   border: none;
@@ -129,10 +129,19 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-reset:hover {
   background-color: var(--bg-secondary);
-  color: var(--color-withe-dark);
+  color: var(--color-offwhite);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+.btn-reset.btn-white {
+  background-color: #fff;
+  color: var(--color-black);
+
+}
+
+.btn-reset:hover {
+  background-color: #dfdfdf;
+}
 /******* BTNS *******/
 
 /******* HEADER *******/
@@ -225,7 +234,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar-nav li a {
-  color: var(--color-withe-dark);
+  color: var(--color-offwhite);
 }
 
 .navbar-nav li a:hover,
@@ -261,6 +270,9 @@ h1, h2, h3, h4, h5, h6{
 .banner {
   position: relative;
   height: 550px;
+  background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #40593c, #86a880);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #40593c, #86a880); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .banner>figure {
@@ -364,7 +376,7 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
   margin-top: -10em;
   background-color: var(--color-secondary);
-  color: var(--color-withe-dark);
+  color: var(--color-offwhite);
   padding: 4.5em 3em;
   z-index: 1;
   border-radius: var(--border-radius);
@@ -903,7 +915,7 @@ footer .card {
 }
 
 .title-footer {
-  color: var(--color-withe-dark);
+  color: var(--color-offwhite);
   margin-bottom: 1em;
 }
 
@@ -922,7 +934,7 @@ footer .card ul li {
 }
 
 footer .card a {
-  color: var(--color-withe-dark);
+  color: var(--color-offwhite);
 }
 
 footer .card a:hover {
