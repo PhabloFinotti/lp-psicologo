@@ -9,6 +9,7 @@
   --bg-soft: #e4eae1;
   --bg-accent: #ffffff;
   --color-secondary: #567950;
+  --color-secondary-soft: #b0c9ac;
   --color-dark: #d2d6cf;
   --color-withe-dark: #f7f8f9;
   --color-black: #333;
@@ -50,6 +51,10 @@ p {
 /******* RESET *******/
 
 /******* TITLE *******/
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+}
+
 .title-primary {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
@@ -255,10 +260,10 @@ p {
 
 .banner {
   position: relative;
+  height: 550px;
 }
 
 .banner>figure {
-  height: 550px;
   width: 100%;
   display: block;
   filter: brightness(0.5);
@@ -506,6 +511,23 @@ p {
     object-position: bottom;
 }
 
+.biografia .biografia__curriculo{
+  margin-top: 1rem;
+}
+
+.biografia .biografia__curriculo h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.biografia .biografia__curriculo li{
+  list-style-type: disc;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+
 /***** BIOGRAFIA *****/
 
 #depoimento{
@@ -583,27 +605,139 @@ p {
 
 #beneficios .header-beneficios{
   text-align: center;
-  margin-bottom: 4.5em;
+  margin-bottom: 6rem;
 }  
 
-#beneficios .row{
-  justify-content: center;
-}
-
-#beneficios .beneficio{
-  justify-content: center;
-}
-
-#beneficios .beneficio__card{
+/* CURRICULO */
+#beneficios .curriculo .card-body{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  padding-bottom: 4rem;
+  gap: 1.5rem;
+}
+
+#beneficios .curriculo .card-body figure{
+  height: 190px;
+  width: 190px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 100vw;
+  overflow: hidden;
+  background-color: var(--white);
+  border: 5px solid var(--color-secondary-soft);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin-top: -5rem;
+  margin-bottom: 0;
+}
+
+#beneficios .curriculo .card-body figure img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+ 
+#beneficios .curriculo .curriculo__inner--card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+#beneficios .curriculo .curriculo__inner--card h3{
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+#beneficios .curriculo .curriculo__inner--card > span{
+  font-size: 1.25rem;
+  opacity: .8;
+}
+
+#beneficios .curriculo .curriculo__inner--card ul{
+  padding: 0;
+  list-style: none;
+}
+
+#beneficios .curriculo .curriculo__inner--card li{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+#beneficios .curriculo .curriculo__inner--card li img{
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+#beneficios .curriculo .curriculo__inner--card.curriculo__valores h3{
+  position: relative;
+  font-size: 2.5rem;
+}
+#beneficios .curriculo .curriculo__inner--card.curriculo__valores h3::after{
+    content: "";
+    display: block;
+    width: 100px;
+    background-color: var(--color-secondary);
+    height: 3px;
+    position: relative;
+    margin: auto;
+    bottom: -8px;
+}
+
+#beneficios .curriculo .curriculo__inner--card.curriculo__valores span{
+  font-size: 1.75rem;
+}
+
+#beneficios .curriculo .curriculo__valores--inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#beneficios .curriculo .curriculo__valores--inner > div > *{
+  text-align: center;
+}
+
+#beneficios .curriculo .curriculo__valores--inner p{
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+#beneficios .curriculo .curriculo__valores--inner span{
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+/* CURRICULO */
+
+#beneficios .beneficios__list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#beneficios .beneficio__card + .beneficio__card{
+  margin-top: 1.5rem;
+}
+#beneficios .beneficio__card{
+  display: flex;
+  gap: 1.5rem;
 }
 
 #beneficios .beneficio__card figure{
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,8 +746,9 @@ p {
   background-color: var(--white);
   border: 3px solid var(--white);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  margin-bottom: 1.6rem;
-  padding: 20px;
+  padding: 10px;
+
+  flex-shrink: 0;
 }
 
 #beneficios .beneficio__card figure img{
@@ -622,11 +757,10 @@ p {
   object-fit: contain;
 }
 
-#beneficios .beneficio__card p{
-  text-align: center;
+/* #beneficios .beneficio__card p{
   max-width: 40ch;
   word-break: auto-phrase;
-}
+} */
 
 .beneficios__button--wrapper{
   display: flex;
