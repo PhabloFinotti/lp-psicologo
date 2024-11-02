@@ -12,6 +12,8 @@
   --color-dark: #d2d6cf;
   --color-withe-dark: #f7f8f9;
   --color-black: #333;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --border-radius: 10px;
 }
 
 /******* RESET *******/
@@ -87,33 +89,52 @@ p {
 /******* TITLE *******/
 
 /******* BTNS *******/
+
+
+.beneficios__button--wrapper a{
+  font-size: 1.25rem;
+  
+}
+
+.beneficios__button--wrapper a i{
+}
+
 .btn-reset {
+  font-size: 1.1rem;
   font-weight: 400;
   background-color: var(--color-secondary);
   color: var(--color-withe-dark);
   padding: .8em 1.5em;
-  border-radius: 0;
+  border-radius: var(--border-radius);
   border: none;
   text-decoration: none;
-  transition: all 150ms ease;
+  transition: all 150ms var(--transition-timing);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: .5rem;
+}
+
+.btn-reset i{
+  line-height: 1;
 }
 
 .btn-reset:hover {
-  background-color: #aaa;
-  color: var(--color-black);
-}
-
-.btn-reset span {
-  font-size: 1.2em;
-  padding-right: .5em;
+  background-color: var(--bg-secondary);
+  color: var(--color-withe-dark);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 /******* BTNS *******/
 
 /******* HEADER *******/
 .header {
-  background-color: var(--bg-primary);
-  color: var(--white);
+  background-color: var(--white);
+  /* background-color: var(--bg-primary); */
+  color: var(--color-black);
 }
 
 .header-top {
@@ -159,13 +180,13 @@ p {
 
 .header-contatos li span {
   padding-right: .3em;
-  color: var(--color-withe-dark);
+  color: var(--bg-secondary);
 
 }
 
 .header-contatos li a {
   display: flex;
-  color: var(--white);
+  color: var(--bg-secondary);
 }
 
 .contatos-body {
@@ -174,7 +195,7 @@ p {
 }
 
 .contatos-small {
-  color: var(--color-dark);
+  color: var(--color-secondary);
   font-size: .5em;
   text-align: right;
 }
@@ -205,7 +226,9 @@ p {
 .navbar-nav li a:hover,
 .navbar-nav li a:focus,
 .navbar-nav li a:active {
-  color: #6a6a6a;
+  color: var(--white);
+  opacity: .8;
+  text-decoration: underline;
 }
 
 .header-bottom .navbar img {
@@ -317,7 +340,7 @@ p {
   transform: rotate(10deg);
   filter: blur(3px);
   background: #8fb58598;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
   backdrop-filter: blur(12.2px);
   -webkit-backdrop-filter: blur(12.2px);
@@ -339,6 +362,7 @@ p {
   color: var(--color-withe-dark);
   padding: 4.5em 3em;
   z-index: 1;
+  border-radius: var(--border-radius);
 }
 
 .sobre-bg .card {
@@ -402,11 +426,6 @@ p {
   z-index: 2;
 }
 
-.card-body-especialidade h4 {
-  font-family: 'Roboto Slab', serif;
-
-}
-
 .header-especialidade {
   text-align: center;
   color: var(--white);
@@ -422,16 +441,24 @@ p {
   font-size: 1rem;
 }
 
-.card-body-especialidade {
+.card {
+  height: 100%;
+  border-radius: var(--border-radius);
+}
+
+.card-body h4 {
+  font-family: 'Roboto Slab', serif;
+}
+.card-body {
   padding: 1em 2em 2em;
 }
 
-.card-body-especialidade span {
+.card-body span {
   color: var(--color-secondary);
   font-size: 4em;
 }
 
-.card-body-especialidade span img {
+.card-body span img {
   height: 64px;
   width: 64px;
   object-fit: contain;
@@ -442,11 +469,6 @@ p {
   height: 100%;
   row-gap: 30px;
   margin-top: 5em;
-}
-
-.especialidade .card {
-  height: 100%;
-  border-radius: 0;
 }
 
 /*** ESPECIALIDADE ***/
@@ -466,13 +488,15 @@ p {
   padding: 2em;
   background-color: var(--white);
   position: absolute;
-  top: 3em;
+  top: 4em;
   right: 0;
+  border-radius: var(--border-radius);
 }
 
 .biografia figure {
   max-height: 700px;
   overflow: hidden;
+  border-radius: var(--border-radius);
 }
 
 .biografia figure img{
@@ -497,6 +521,7 @@ p {
   background-color: var(--bg-soft);
   color: #555;
   padding: 1em;
+  border-radius: var(--border-radius);
 }
 
 .card-depoimento {
@@ -551,6 +576,79 @@ p {
   width: 100%;
 }
 
+/******* Contato *******/
+#beneficios{
+  padding: 20px 0 90px;
+}
+
+#beneficios .header-beneficios{
+  text-align: center;
+  margin-bottom: 4.5em;
+}  
+
+#beneficios .row{
+  justify-content: center;
+}
+
+#beneficios .beneficio{
+  justify-content: center;
+}
+
+#beneficios .beneficio__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#beneficios .beneficio__card figure{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100vw;
+  overflow: hidden;
+  background-color: var(--white);
+  border: 3px solid var(--white);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin-bottom: 1.6rem;
+  padding: 20px;
+}
+
+#beneficios .beneficio__card figure img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#beneficios .beneficio__card p{
+  text-align: center;
+  max-width: 40ch;
+  word-break: auto-phrase;
+}
+
+.beneficios__button--wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.beneficios__button--wrapper a{
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: .5rem;
+}
+
+.beneficios__button--wrapper a i{
+  line-height: 1;
+}
+/******* Contato *******/
+
 /******* BLOG *******/
 .blog {
   padding: 5em 0 10em;
@@ -560,7 +658,7 @@ p {
 
 .blog .card {
   height: 100%;
-  border-radius: 0;
+  border-radius: var(--border-radius);
   box-shadow: -5px 2px 35px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -630,7 +728,7 @@ p {
 }
 
 .form-contato input {
-  border-radius: 0;
+  border-radius: var(--border-radius);
   background-color: var(--bg-secondary);
   border: 1px solid var(--color-dark);
   padding: .5em;
