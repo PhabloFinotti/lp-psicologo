@@ -25,6 +25,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-offwhite);
 }
@@ -44,7 +48,6 @@ a {
 p {
   margin: 0;
   margin-bottom: 10px;
-  text-align: justify;
   hyphens: auto;
 }
 
@@ -90,6 +93,12 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
   letter-spacing: .2em;
 }
+
+
+.title-center{
+  text-align: center;
+  margin-bottom: 6rem;
+}  
 
 /******* TITLE *******/
 
@@ -146,9 +155,12 @@ h1, h2, h3, h4, h5, h6{
 
 /******* HEADER *******/
 .header {
+  position: sticky;
   background-color: var(--white);
-  /* background-color: var(--bg-primary); */
   color: var(--color-black);
+  z-index: 99999;
+  top: 0;
+  transition: all 300ms ease-in-out;
 }
 
 .header-top {
@@ -219,14 +231,14 @@ h1, h2, h3, h4, h5, h6{
   transition: 300ms;
 }
 
-.header-fixo {
+.header.fixed{
+  transform: translateY(var(--header-top-height));
+}
+
+
+.header.fixed .header-bottom{
   transition: 300ms;
   box-shadow: -5px 2px 35px 0px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
 }
 
 .navbar-nav li {
@@ -272,64 +284,52 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
   height: 550px;
   background: #1f4037;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #40593c, #86a880);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #40593c, #86a880); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.banner>figure {
-  width: 100%;
-  display: block;
-  filter: brightness(0.5);
-}
-
-.banner>figure img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.banner .banner__responsivo {
-  display: none;
-}
-
-.banner .banner__conteudo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.banner .info-banner {
-  width: 60%;
+  background: -webkit-linear-gradient(to right, #40593c, #98b792);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #40593c, #98b792); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: var(--white);
-  padding: 5em 0;
+}
+.banner > .container {
+  height: 100%;
+  width: 100%;
 }
 
-.info-banner h1 {
+.banner > .container > .row{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* width: 100%; */
+  flex-wrap: wrap-reverse;
+}
+
+.banner__conteudo h1 {
   font-size: 3em;
 }
 
-.info-banner p {
+.banner__conteudo p {
   font-weight: 300;
   font-size: 1.2em;
 }
 
-.info-banner .title-secondary {
+.banner__conteudo .title-secondary {
   color: #fafafa;
   font-weight: normal;
   font-size: 1rem;
 }
 
-.info-banner figure img {
-  max-width: 120px;
+.banner figure {
+  border: 8px solid var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: var(--white);
+  margin: 0;
+  height: 450px;
 }
 
-.info-banner figure figcaption {
-  font-size: 1em;
-  font-weight: 700;
+.banner figure img {
+  border-radius: calc(var(--border-radius) - 4px);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .btn-info {
@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6{
 
 .sobre-bg {
   position: relative;
-  margin-top: -10em;
+  margin-top: -7em;
   background-color: var(--color-secondary);
   color: var(--color-offwhite);
   padding: 4.5em 3em;
@@ -408,10 +408,13 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 1rem;
   border: solid .5em var(--white);
   overflow: hidden;
+  border-radius: var(--border-radius);
+  background: var(--white);
 }
 
 .card-img-sobre figure img{
   object-fit: contain;
+  border-radius: calc(var(--border-radius) - 4px);
 }
 
 /******* SOBRE *******/
@@ -459,28 +462,30 @@ h1, h2, h3, h4, h5, h6{
   font-size: 1rem;
 }
 
-.card {
+#especialidade .card {
   height: 100%;
   border-radius: var(--border-radius);
 }
 
-.card-body h4 {
+#especialidade .card-body h4 {
   font-family: 'Roboto Slab', serif;
 }
-.card-body {
+#especialidade .card-body {
   padding: 1em 2em 2em;
 }
 
-.card-body span {
+#especialidade .card-body span {
   color: var(--color-secondary);
   font-size: 4em;
 }
 
-.card-body span img {
+#especialidade .card-body span img,
+#especialidade .card-body span svg {
   height: 64px;
   width: 64px;
   object-fit: contain;
-  fill: #dadada;
+  fill: #a4a4a4;
+  color: #a4a4a4;
 }
 
 .especialidade .row {
@@ -600,24 +605,102 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom: 1em;
 }
 
+.eventos .container{
+  position: relative;
+}
+
+.eventos .swiper-event-pagination {
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.eventos .swiper-event-pagination-bullet {
+  height: 10px;
+  width: 10px;
+}
+
 .swiper-pagination-bullet-active {
   background-color: var(--color-black);
 }
+
 
 .footer__mapa iframe {
   max-height: 250px;
   width: 100%;
 }
 
-/******* Contato *******/
+
+/******* CALL TO ACTION *******/
+.cta{
+  padding: 4rem 0;
+  background-color: var(--bg-soft);
+  text-align: center;
+  margin: 0;
+ 
+
+  background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #40593c, #6c8e66);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #40593c, #6c8e66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--white);
+}
+
+.cta h2{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cta p {
+  font-size: 1.4rem;
+}
+
+.cta a,
+.cta button{
+  margin: 2rem auto 0;
+}
+/******* CALL TO ACTION *******/
+
+/******* EVENTOS *******/
+.eventos  {
+  padding: 4rem 0;
+}
+.eventos .card{
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.eventos .card:hover{
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  scale: 1.008;
+}
+
+.eventos .card-header{
+  background: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+.eventos .card-header figure {
+  height: 250px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.eventos .card-header figure img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/******* EVENTOS *******/
+
+/******* BENEFICIOS *******/
 .beneficios{
   padding: 1rem 0 5rem;
 }
-
-.beneficios .header-beneficios{
-  text-align: center;
-  margin-bottom: 6rem;
-}  
 
 /* CURRICULO */
 .beneficios .curriculo .card-body{
@@ -791,7 +874,7 @@ h1, h2, h3, h4, h5, h6{
 .beneficios__button--wrapper a i{
   line-height: 1;
 }
-/******* Contato *******/
+/******* BENEFICIOS *******/
 
 /******* BLOG *******/
 .blog {

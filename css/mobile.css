@@ -1,14 +1,10 @@
 @media screen and (max-width: 990px) {
-  .banner > figure {
-    display: none;
+  .title-center{
+    margin-bottom: 4rem;
   }
 
-  .banner > figure.banner__responsivo {
-    display: block;
-  }
-
-  .banner .info-banner {
-    width: 100%;
+  #beneficios .title-center{
+    margin-bottom: 6rem;
   }
 
   .sobre-bg {
@@ -105,15 +101,36 @@
   .beneficios .beneficios__list {
     margin-top: 2rem;
   }
+
+  .beneficios__button--wrapper a {
+    font-size: 1.1rem;
+  }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 764px) {
+
+  .banner {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .banner > .container > .row{
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner figure {
+    height: 250px;
+  }
+
+  .banner figure img{
+    object-position: 0px -40px;
+  }
+
   .title-primary {
     text-align: center;
     font-size: 2rem;
   }
 
-  .info-banner h1 {
-    font-size: 2.25rem;
-  }
  
 }
