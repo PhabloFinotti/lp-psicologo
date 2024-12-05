@@ -12,6 +12,11 @@
     font-size: 1.25rem;
   }
 
+  .banner figure::after {
+    bottom: 70%;
+    left: -6rem;
+  }
+
   #beneficios .title-center{
     margin-bottom: 6rem;
   }
