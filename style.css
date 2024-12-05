@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5, h6{
 
 .banner figure {
   border: 8px solid var(--white);
-  border-radius: var(--border-radius);
+  border-radius: calc(var(--border-radius) * 3);
   overflow: hidden;
   background: var(--white);
   margin: 0;
@@ -331,6 +331,7 @@ h1, h2, h3, h4, h5, h6{
   object-fit: cover;
   height: 100%;
   width: 100%;
+  object-position: 0 -30px;
 }
 
 .btn-info {
