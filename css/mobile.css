@@ -3,6 +3,15 @@
     margin-bottom: 4rem;
   }
 
+  .banner__conteudo h1 {
+    font-size: 3.5rem;
+  }
+
+  .banner__conteudo p {
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+
   #beneficios .title-center{
     margin-bottom: 6rem;
   }

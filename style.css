@@ -288,6 +288,7 @@ h1, h2, h3, h4, h5, h6{
   background: linear-gradient(to right, #40593c, #98b792); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: var(--white);
 }
+
 .banner > .container {
   height: 100%;
   width: 100%;
@@ -302,12 +303,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .banner__conteudo h1 {
-  font-size: 3em;
+  font-size: 5rem;
 }
 
 .banner__conteudo p {
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.25rem;
 }
 
 .banner__conteudo .title-secondary {
