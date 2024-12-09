@@ -10,14 +10,17 @@
     <link rel="icon" type="image/ico" href="img/yuri-rander-favicon.ico">
 
     <!-- Only css Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
 
     <!-- Icons Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="lib/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
 
     <!-- CSS swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="lib/swiper.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 
     <!-- CSS do projeto -->
     <link rel="stylesheet" href="style.css">
@@ -25,18 +28,21 @@
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
 
     <!-- JavaScript Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    <script defer src="lib/bootstrap.min.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script> -->
 
     <!-- JavaScript JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="lib/jquery.min.js"></script>
+    <!-- <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
 
     <!-- JavaScript SWIPER -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script defer src="lib/swiper.min.js"></script>
 
-    <script src="js/efeitos.js"></script>
+    <script defer src="js/efeitos.js"></script>
 
   </head>
 
@@ -93,6 +99,9 @@
                 </li>
                 <li class="nav-item">
                   <a href="#beneficios" class="nav-link scroll">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#eventos" class="nav-link scroll">Eventos</a>
                 </li>
                 <li class="nav-item">
                   <a href="#depoimento" class="nav-link scroll">Depoimentos</a>
@@ -382,102 +391,97 @@
           <h2 class="title-primary title-border-center">Eventos</h2>
         </div>
       </div>
-      
+
       <div class="slider_container">
         <div class="container">
           <div class="swiper event__slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card card__evento">
-                  <div class="card-header">
-                    <figure>
-                      <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3>Psicologia Feminina</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corporis, amet nobis aspernatur
-                      labore magni modi possimus id hic dolore dolor, tempore odio accusamus reprehenderit quidem!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card__evento">
-                  <div class="card-header">
-                    <figure>
-                      <img src="https://plus.unsplash.com/premium_photo-1679429320956-f6171b6f006b?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3>Evento Unidos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corporis, amet nobis aspernatur
-                      labore magni modi possimus id hic dolore dolor, tempore odio accusamus reprehenderit quidem!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card__evento">
-                  <div class="card-header">
-                    <figure>
-                      <img src="https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3>Psicologia ao ar livre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corporis, amet nobis aspernatur
-                      labore magni modi possimus id hic dolore dolor, tempore odio accusamus reprehenderit quidem!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card__evento">
-                  <div class="card-header">
-                    <figure>
-                      <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3>Psicologia Feminina</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corporis, amet nobis aspernatur
-                      labore magni modi possimus id hic dolore dolor, tempore odio accusamus reprehenderit quidem!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card__evento">
-                  <div class="card-header">
-                    <figure>
-                      <img src="https://plus.unsplash.com/premium_photo-1679429320956-f6171b6f006b?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3>Evento Unidos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corporis, amet nobis aspernatur
-                      labore magni modi possimus id hic dolore dolor, tempore odio accusamus reprehenderit quidem!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card card__evento">
-                  <div class="card-header">
-                    <figure>
-                      <img src="https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3>Psicologia ao ar livre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit corporis, amet nobis aspernatur
-                      labore magni modi possimus id hic dolore dolor, tempore odio accusamus reprehenderit quidem!</p>
-                  </div>
-                </div>
-              </div>
-              
+              <!-- Incluido pelo JS -->
             </div>
           </div>
           <div class="swiper-event-pagination"></div>
         </div>
       </div>
     </section>
+
+    <!-- Modal Eventos -->
+    <div class="modal fade modalEvent" id="modalEvent" tabindex="-1" aria-labelledby="modalEventLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEventLabel">Evento 01</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-8 modal__event--slides--wrapper">
+                <div class="slider_container">
+                  <div class="swiper modal_event_slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="event__image--wrapper">
+                          <figure>
+                            <img src="img/yuri-rander-avatar-2.jpg" alt="Avatar do Psicólogo Yuri">
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="event__image--wrapper">
+                          <figure>
+                            <img src="img/yuri-rander-1.jpeg" alt="Avatar do Psicólogo Yuri">
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="event__image--wrapper">
+                          <figure>
+                            <img src="img/yuri-rander-2.jpeg" alt="Avatar do Psicólogo Yuri">
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="event__image--wrapper">
+                          <figure>
+                            <img src="img/yuri-rander-3.jpeg" alt="Avatar do Psicólogo Yuri">
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__event--buttons">
+                  <div class="swiper-modal-event-button-prev"></div>
+                  <div class="swiper-modal-event-button-next"></div>
+                </div>
+                <div class="swiper-modal-event-pagination"></div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="modal__event--content">
+                  <h3 class="modal__event--content--title">Evento 01</h3>
+                  <div class="modal__event--content--description">
+                    <p>“Multiplicando saberes, fortalecendo a prática: a sinergia como impulsionadora da nossa jornada
+                      de aprendizado.”</p>
+                    <p>E assim foi o curso de formação no novo teste de HTP, ministrado pela psicóloga e professora
+                      acadêmica @sararcribeiro.</p>
+                    <p>Estou imensamente feliz por mais projeto que deu certo, que conseguimos sair ainda melhores, com
+                      foco no conhecimento e no crescimento através da aprendizagem.</p>
+                    <p>Grato por cada um que fez parte dessa turma, cada amizade que a psicologia me trouxe e cada um
+                      que é referência para mim.</p>
+                    <p>Com coração grato e pensando no próximo rsrs desafio é conhecimento me move.</p>
+                    <br>
+                    <p><strong>Yuri Rander</strong></p>
+                    <p>Psicólogo CRP09.16202</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Modal Eventos -->
 
     <section class="beneficios" id="beneficios">
       <div class="container">
@@ -699,6 +703,7 @@
                 <li><a class="scroll" href="#especialidade">Área de Atuação</a></li>
                 <li><a class="scroll" href="#biografia">Profissional</a></li>
                 <li><a class="scroll" href="#beneficios">Benefícios</a></li>
+                <li><a class="scroll" href="#eventos">Eventos</a></li>
                 <li><a class="scroll" href="#depoimento">Depoimentos</a></li>
               </ul>
             </div>
