@@ -386,8 +386,8 @@ h1, h2, h3, h4, h5, h6{
   width: 414px;
   max-width: 40vw;
   max-height: 40vh;
-  left: 13px;
-  bottom: 15%;
+  right: 13px;
+  bottom: 5%;
   transform: rotate(10deg);
   filter: blur(3px);
   background: #8fb58598;
@@ -408,7 +408,6 @@ h1, h2, h3, h4, h5, h6{
 
 .sobre-bg {
   position: relative;
-  margin-top: -7em;
   background-color: var(--color-secondary);
   color: var(--color-offwhite);
   padding: 4.5em 3em;
@@ -454,9 +453,9 @@ h1, h2, h3, h4, h5, h6{
 
 /*** ESPECIALIDADE ***/
 #especialidade {
-  clip-path: polygon(0 18%, 100% 25%, 100% 100%, 0 100%);
-  padding: 26em 0 5em 0;
-  margin-top: -27em;
+  clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0 100%);
+  padding: 5rem 0;
+  margin-top: 1rem;
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -734,7 +733,6 @@ h1, h2, h3, h4, h5, h6{
 .modalEvent{
   --modal-event-image-height: 500px;
 }
-
 
 .modalEvent .modal-body{
   padding: 2rem;

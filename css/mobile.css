@@ -71,13 +71,22 @@
     margin-bottom: 1em;
   }
 
-  .biografia figure {
-    width: 100%;
-    text-align: center;
   }
   .biografia figure img {
     width: 100%;
   } */
+
+  .biografia .title-primary {
+    margin-bottom: 3rem;
+  }
+
+  .biografia .title-border:after{
+    margin: 0 auto;
+  }
+
+  .biografia figure {
+    max-height: 400px;
+  }
 
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev,
@@ -118,6 +127,33 @@
 
   .beneficios__button--wrapper a {
     font-size: 1.1rem;
+  }
+
+  .modalEvent{
+    --modal-event-image-height: 300px;
+  }
+
+  .modalEvent .modal-body{
+    padding: 1rem;
+  }
+
+  .modal__event--slides--wrapper{
+    padding: 0;
+  }
+
+  .swiper__event--buttons{
+    top: unset;
+    transform: unset;
+    bottom: 0;
+  }
+
+  .modal__event--content{
+    margin-top: 3rem;
+  }
+
+  .swiper-modal-event-button-next, .swiper-modal-event-button-prev{
+    height: 50px;
+    width: 50px;
   }
 }
 @media screen and (max-width: 767px) {
