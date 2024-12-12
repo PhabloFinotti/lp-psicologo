@@ -732,7 +732,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* MODAL EVENTOS */
 .modalEvent{
-  --modal-event-image-height: 500px;
+  --modal-event-image-height: 600px;
 }
 
 .modalEvent .modal-body{
@@ -784,8 +784,9 @@ h1, h2, h3, h4, h5, h6{
   transform: translateY(-50%);
   inset-inline: 0;
   z-index: 1;
-  padding-left: inherit;
-  padding-right: inherit;
+  padding-inline: inherit;
+  margin-inline: 8px;
+  
 }
 
 .swiper-modal-event-button-next,
@@ -801,17 +802,23 @@ h1, h2, h3, h4, h5, h6{
   background-position: center;
   
   position: relative;
-}
+  opacity: .5;
 
-.swiper-modal-event-button-next::after,
-.swiper-modal-event-button-prev::after{
-  font-family: swiper-icons;
-  color: var(--white);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &::after{
+    font-family: swiper-icons;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.18), 0 4px 6px -4px rgb(0 0 0 / 0.18);
+
+    opacity: 1;
+  }
 }
 
 .swiper-modal-event-button-next::after{
@@ -822,12 +829,6 @@ h1, h2, h3, h4, h5, h6{
   content: 'prev';
 }
 
-.swiper-modal-event-button-next:hover,
-.swiper-modal-event-button-prev:hover{
-  /* background: var(--color-secondary);
-  color: var(--color-offwhite); */
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.18), 0 4px 6px -4px rgb(0 0 0 / 0.18);
-}
 
 .swiper-modal-event-pagination{
   display: flex;
