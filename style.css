@@ -1150,6 +1150,11 @@ footer .card {
   margin-bottom: 1em;
 }
 
+.menu-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .menu-footer li {
   display: inline;
   margin-right: .5em;
