@@ -136,11 +136,37 @@ document.onload = $(function () {
       quantity: 5,
       type: 'jpeg',
     },
+    8: {
+      name: 'Psicólogo Jurídico',
+      description: `
+        <p>🎓📚 Tive a honra de ministrar uma aula sobre a atuação do psicólogo jurídico na área do trabalho, a convite da professora Dra. Analice Vinhal, no Instituto Goiano do Direito (IGD).</p>
+        <p>Uma troca rica com estudantes de Direito, refletindo sobre os desafios da perícia, os laudos, e a interface ética e técnica entre Psicologia e Justiça do Trabalho. ⚖️🧠</p>
+        <p>Grato pela acolhida e pela oportunidade de contribuir com a formação de futuros profissionais comprometidos com a saúde e os direitos no ambiente laboral!</p>
+        <p>#PsicologiaJurídica #PsicologiaDoTrabalho #DireitoDoTrabalho #YuriRander #PsicólogoJurídico #IGD #formacaointerdisciplinar #psiyurirander #yuriranderpsicologo</p>
+      `,
+      prefix: 'psicologo-juridico',
+      quantity: 3,
+      type: 'jpeg',
+    },
+    9: {
+      name: '11ª Feira da Psicologia',
+      description: `
+        <p>🎥✨ #euvim e estive presente na 11ª Feira da Psicologia – um verdadeiro hub de soluções e conexões para quem vive a psicologia na prática!</p>
+        <p>Foram momentos de muito aprendizado, trocas riquíssimas e reflexões sobre gestão clínica, inovação e fortalecimento da nossa atuação profissional. 💼🧠</p>
+        <p>🔹 Psicologia que transforma.</p>
+        <p>🔹 Psicologia que empreende.</p>
+        <p>🔹 Psicologia que constrói saúde mental com responsabilidade e excelência.</p>
+        <p>Seguimos guiando caminhos confiáveis para a saúde mental no Brasil! 💙</p>
+        <p>#FeiraDaPsicologia #PsicologiaEmpreendedora #SaúdeMental #YuriRander #PsicologiaJurídica #ClínicaPsicológica #EventosDePsicologia</p>
+      `,
+      prefix: '11-feira-da-psicologia',
+      quantity: 6,
+      type: 'jpeg',
+    },
   };
 
   for (const key in eventData) {
     const event = eventData[key];
-    console.log(event);
     $('.event__slider .swiper-wrapper').append(
       `
       <div class="swiper-slide">
@@ -222,6 +248,7 @@ document.onload = $(function () {
     }
 
     eventSwiper.update();
+    eventSwiper.slideTo(0);
   });
 
   var eventSwiper = new Swiper('.modal_event_slider', {
