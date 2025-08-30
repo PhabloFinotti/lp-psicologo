@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar-brand figure {
-  height: 95px;
+  height: 55px;
   width: auto;
 }
 
@@ -1131,7 +1131,7 @@ footer {
 }
 
 footer .logo-footer{
-  height: 200px;
+  height: 150px;
 }
 
 footer .logo-footer img{
