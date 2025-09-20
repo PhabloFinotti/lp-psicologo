@@ -1,4 +1,8 @@
 document.onload = $(function () {
+  setTimeout(() => {
+    new bootstrap.Modal(document.getElementById('downloadEbookModal')).show();
+  }, 2000);
+
   // Menu Fixo
   $(window).bind('scroll', function () {
     var navHeight = $('.header').height();

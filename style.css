@@ -1308,3 +1308,18 @@ footer .card a:hover {
   font-size: 20px;
   margin-left: 1px;
 }
+
+#downloadEbookModal .modal-content {
+  background: transparent;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#downloadEbookModal .modal-content .btn-close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Yuri Rander | Psicólogo Clínico em Goiânia</title>
+    <meta name="title" content="Yuri Rander | Psicólogo Clínico em Goiânia" />
+    <meta name="description" content="Encontre o apoio que você precisa para viver uma vida mais equilibrada e feliz. Vamos juntos superar desafios e promover seu bem-estar!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuriranderpsicologo.com.br/" />
+    <meta property="og:title" content="Yuri Rander | Psicólogo Clínico em Goiânia" />
+    <meta property="og:description" content="Encontre o apoio que você precisa para viver uma vida mais equilibrada e feliz. Vamos juntos superar desafios e promover seu bem-estar!" />
+    <meta property="og:image" content="img/logo-nova-verde.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yuriranderpsicologo.com.br/" />
+    <meta property="twitter:title" content="Yuri Rander | Psicólogo Clínico em Goiânia" />
+    <meta property="twitter:description" content="Encontre o apoio que você precisa para viver uma vida mais equilibrada e feliz. Vamos juntos superar desafios e promover seu bem-estar!" />
+    <meta property="twitter:image" content="img/logo-nova-verde.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="shortcut icon" type="image/ico" href="img/favicon-novo.ico">
+
+    <!-- Only css Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  <style>
+    body{
+      height: 100svh;
+      width: 100%;    
+    }
+
+    main{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+
+    /* From Uiverse.io by adamgiebl */ 
+    .dots-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin-right: 10px;
+      border-radius: 10px;
+      background-color: #b3d4fc;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    .dot:last-child {
+      margin-right: 0;
+    }
+
+    .dot:nth-child(1) {
+      animation-delay: -0.3s;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: -0.1s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.1s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.8);
+        background-color: #b3d4fc;
+        box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+      }
+
+      50% {
+        transform: scale(1.2);
+        background-color: #6793fb;
+        box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+      }
+
+      100% {
+        transform: scale(0.8);
+        background-color: #b3d4fc;
+        box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+      }
+    }
+  </style>
+
+  <main>
+    <h1>Preparando seu download...</h1>
+    <p>Você sera redirecionado automaticamente em alguns segundos.</p>
+    <div class="dots-container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </main>
+
+  <script>
+    // URL do arquivo que você quer disponibilizar
+    const fileUrl = "/ebook-inteligencia-artificial-yuri-rander.pdf"; // ou pode ser um link externo
+
+    // Pega a URL da página anterior
+    const previousPage = document.referrer || "/";
+
+    // Cria um link temporário para forçar o download
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Plataformas de Inteligência Artificial para Psis Psicólogo Yuri Rander.pdf"; // isso força o navegador a baixar em vez de abrir
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Aguarda um pouco e depois redireciona de volta
+    setTimeout(() => {
+      window.location.href = previousPage;
+    }, 2000);
+  </script>
+</body>
+</html>
