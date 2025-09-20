@@ -48,6 +48,9 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      max-width: 80vw;
+      margin: 0 auto;
+      text-align: center;
     }
     
 
@@ -119,18 +122,20 @@
 
   <script>
     // URL do arquivo que você quer disponibilizar
-    const fileUrl = "/ebook-inteligencia-artificial-yuri-rander.pdf"; // ou pode ser um link externo
+    // const fileUrl = "/ebook-inteligencia-artificial-yuri-rander.pdf"; // ou pode ser um link externo
 
-    // Pega a URL da página anterior
-    const previousPage = document.referrer || "/";
+    // // Pega a URL da página anterior
+    // const previousPage = document.referrer || "/";
 
-    // Cria um link temporário para forçar o download
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = "Plataformas de Inteligência Artificial para Psis Psicólogo Yuri Rander.pdf"; // isso força o navegador a baixar em vez de abrir
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // // Cria um link temporário para forçar o download
+    // const link = document.createElement("a");
+    // link.href = fileUrl;
+    // link.download = "Plataformas de Inteligência Artificial para Psis Psicólogo Yuri Rander.pdf"; // isso força o navegador a baixar em vez de abrir
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+
+    window.sessionStorage.setItem('downloaded-pdf-ia-2025', true)
 
     // Aguarda um pouco e depois redireciona de volta
     setTimeout(() => {
