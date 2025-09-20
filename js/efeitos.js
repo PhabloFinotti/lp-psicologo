@@ -1,6 +1,9 @@
 document.onload = $(function () {
   setTimeout(() => {
-    new bootstrap.Modal(document.getElementById('downloadEbookModal')).show();
+    if (!window.localStorage.getItem('downloaded-pdf-ia-2025')) {
+      new bootstrap.Modal(document.getElementById('downloadEbookModal')).show();
+      window.localStorage.removeItem('downloaded-pdf-ia-2025');
+    }
   }, 2000);
 
   // Menu Fixo
